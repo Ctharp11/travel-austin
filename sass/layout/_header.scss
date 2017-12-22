@@ -1,0 +1,44 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-fade-light,  0.63),
+        rgba($color-fade-dark, 0.8)),
+       url('../img/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    &__austin-logo {
+        height: 8.5rem;
+    }
+    
+    &__hero-opacity {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 60%;
+        height: 40rem;
+        background-color: $color-primary-light;
+        opacity: 0.6;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-47%, -50%);
+        text-align: center;
+        width: 50%;
+    }
+    
+}

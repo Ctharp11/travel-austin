@@ -1,0 +1,22 @@
+{
+  "name": "travel-austin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ctharp11/travel-austin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ctharp11/travel-austin/issues"
+  },
+  "homepage": "https://github.com/Ctharp11/travel-austin#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

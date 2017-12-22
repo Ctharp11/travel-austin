@@ -1,0 +1,21 @@
+.row {
+    background-color: #eee;
+    color: blueviolet;
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    &:not(:first-child) {
+        margin-top: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    [class^="col-"] {
+        background: orangered;
+        float: left;
+        padding: 1rem;
+    }
+
+    
+
+}
