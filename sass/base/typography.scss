@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     padding: 3rem;
-    color: $color-offwhite;
+    color: $color-dark-grey;
 }
 
 .heading-primary {
@@ -11,6 +11,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 6rem;
     backface-visibility: hidden;
+    color: $color-white;
 
     &--main {
         display: inline-block;
@@ -29,6 +30,46 @@ body {
         letter-spacing: .5rem;
         font-weight: 700;
         animation: moveInRight 1s ease-out;
+    } 
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    backface-visibility: hidden;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all .3s;
+
+    &:hover {
+        // transform: translateY(-2px);
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0 .5rem 1rem rgba($color-black, .4)
     }
     
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.1px; 
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &__list {
+        list-style-type: square;
+        font-size: $default-font-size;
+        margin-left: 3rem;
+    }
 }
