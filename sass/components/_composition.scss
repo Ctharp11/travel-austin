@@ -30,8 +30,12 @@
 
     &__photo:hover {
         z-index: 2;
-        transform: scale(1.05);
+        transform: scale(1.05) translateY(-.5rem);
         outline: 1rem solid $color-primary-dark;
         box-shadow: 0 2.5rem 7rem rgba($color-black, .6);
     }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    } 
 }
