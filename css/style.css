@@ -161,6 +161,10 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.card {
+  border: solid black;
+  height: 20rem; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -276,7 +280,7 @@ body {
 
 .section-features {
   margin-top: -8rem;
-  padding: 10rem 0 20rem 0;
+  padding: 4rem 0 12rem 0;
   background-image: linear-gradient(to right bottom, rgba(238, 113, 43, 0.8), rgba(220, 71, 18, 0.9)), url("../img/features-img.jpg");
   background-size: cover;
   transform: skewY(-7deg); }
