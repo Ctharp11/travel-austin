@@ -126,7 +126,7 @@
     </section>
 
     <section class="section-tours">
-            <div class="u-center-text" id="tours">
+            <div class="u-center-text" id="tours" id="modal-close">
                 <h2 class="heading-secondary u-margin-bottom-medium">
                     Our Most Popular Tours
                 </h2>
@@ -160,7 +160,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$50</p>
                                 </div>
-                                <a id="tour1" href="#tour1" class="btn">Book Now</a>
+                                <a id="tour1" href="#modal" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$40</p>
                                 </div>
-                                <a id="tour1" href="#tour1" class="btn">Book Now</a>
+                                <a id="tour1" href="#modal" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +211,6 @@
                                 <div class="card__details-main"> Live Music Tour </div>
                                 <br>
                                 <div class="card__details-sub"> 
-                                    <!-- An incredible oportunity to see different music offered by the great city, this tour will take you two 3 different venues for an opportunity to see 3 or more bands in one evening! -->
                                     <ul>
                                         <li>See 3 Austin venues</li>
                                         <li>Live music at each venue</li>
@@ -227,7 +226,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$45</p>
                                 </div>
-                                <a id="tour1" href="#tour1" class="btn">Book Now</a>
+                                <a id="tour1" href="#modal" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -235,10 +234,29 @@
             </div>
 
             <div class="u-center-text u-margin-top-big">
-                <a href="#tours" class="btn btn--orange btn--animated">View all tours</a>
+                <a href="#modal" class="btn btn--orange btn--animated">View all tours</a>
             </div>
 
     </section>
+
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__container--text">
+                <div class="modal__container--text--main">
+                    Hold on a sec...
+                </div>
+                <div class="modal__container--text--sub">
+                    This is a fictional company built by me to show off some CSS animations and design, so you can't actually book a tour of Austin here. I hope you enjoy browsing though, and make sure to hover over things to see the animations!
+                </div>
+
+                <img class="modal__container--text--stop" src="https://media.giphy.com/media/3o6Zt3NI3hLqP6m0YE/giphy.gif" alt="stop">
+                
+                <a href="#modal-close"><img class="modal__container--close" src="img/times-circle.svg"></a>
+
+            </div>
+
+        </div>
+    </div>
         
     </main>
 

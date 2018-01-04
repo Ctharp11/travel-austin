@@ -1,0 +1,79 @@
+.modal {
+    position: relative;
+
+    &__container {
+        position: fixed;
+        border-radius: .5rem;
+        top: 10rem;
+        left: 50%;
+        transform: translate(-50%);
+        width: 50rem;
+        height: 50rem;
+        background-color: $color-grey-light-2;
+
+        -webkit-transform: translate(-500%, 0);
+        -ms-transform: translate(-500%, 0);
+        transform: translate(-500%, 0);
+
+        -webkit-transition: -webkit-transform .2s ease-out;
+        transition: transform .2s ease-out;
+        
+
+        &--text {
+            text-align: center;
+            padding: 2rem;
+
+            &--main {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-top: 7rem;
+            }
+
+            &--sub {
+                font-size: 1.8rem;
+                margin-top: 2rem;
+                font-weight: 700;
+                letter-spacing: 1.2px;
+
+            }
+
+            &--stop {
+                height: 15rem;
+                margin-top: 2rem;
+            }
+        } 
+
+        &--close {
+            position: absolute;
+            top: 1rem; 
+            right: 1rem;
+            height: 4rem;
+
+        }
+
+    }
+
+    &:before {
+        content: "";
+        position: fixed;
+        display: none;
+        background-color: rgba($color-black, .8);
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &:target:before {
+        display: block;
+    }
+
+    &:target &__container {
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+
+}
+
+#modal-close {}
