@@ -113,13 +113,14 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #F1E9E3;
   display: inline-block;
   padding: 2rem 4rem;
-  color: #DC4712;
   border-radius: 10rem;
   position: relative;
   backface-visibility: hidden;
@@ -133,6 +134,14 @@ body {
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #F1E9E3;
+  color: #DC4712; }
+
+.btn--orange {
+  background-color: #DC4712;
+  color: #FBF7F7; }
 
 .btn--animated {
   animation: moveButtonUp .3s ease-in .3s;
@@ -214,8 +223,7 @@ body {
     line-height: 1.1;
     margin: 1rem 0;
     color: white;
-    padding: 1rem;
-    position: relative; }
+    padding: 1rem; }
   .card__heading--span {
     position: relative;
     top: -50px;
@@ -243,6 +251,23 @@ body {
         padding: .7rem; }
         .card__details-sub ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #FBF7F7;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }

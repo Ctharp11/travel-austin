@@ -4,10 +4,8 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        background-color: $color-offwhite;
         display: inline-block;
         padding: 2rem 4rem;
-        color: $color-primary-dark;
         border-radius: 10rem;
         position: relative;
         backface-visibility: hidden;
@@ -23,6 +21,20 @@
     &:active {
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, 0.2)
+    }
+
+    &--white {
+        background-color: $color-offwhite;
+        color: $color-primary-dark;
+    }
+
+    &--orange {
+        background-color: $color-primary-dark;
+        color: $color-white;
+
+        // &::after {
+        //     background-color: white;
+        // }
     }
 
     &--animated {
