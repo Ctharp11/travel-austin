@@ -11,6 +11,11 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
+    @include respond(tab-port) {
+        webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;
@@ -31,6 +36,10 @@
         height: 40rem;
         background-color: $color-primary-light;
         opacity: 0.6;
+
+        @include respond(phone) {
+            top: 50%;
+        }
     }
     
     &__text-box {
@@ -40,6 +49,10 @@
         transform: translate(-47%, -50%);
         text-align: center;
         width: 50%;
+
+        @include respond(phone) {
+            top: 50%;
+        }
     }
     
 }

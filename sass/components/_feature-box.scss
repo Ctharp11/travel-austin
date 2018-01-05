@@ -11,6 +11,11 @@
     -moz-transition: -webkit-transform .2s ease-out;
     transition: -webkit-transform .2s;
 
+    @include respond(phone) {
+        height: 25rem;
+        margin-top:5rem;
+    }
+
     &__icon {
         height: 4rem;
         margin: 2rem 0;
