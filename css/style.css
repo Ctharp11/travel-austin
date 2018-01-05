@@ -570,3 +570,15 @@ body {
   margin-top: -15rem;
   padding: 20rem 0;
   margin-bottom: 10rem; }
+
+.footer {
+  position: relative; }
+  .footer__text {
+    font-size: 1rem;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media (max-width: 49.12em) {
+      .footer__text {
+        top: -5rem; } }

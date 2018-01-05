@@ -47,3 +47,18 @@
     padding: 20rem 0;
     margin-bottom: 10rem;
 }
+
+.footer {
+    position: relative;
+
+    &__text {
+        position: absolute; 
+        top: -2.5rem;
+        left:50%;
+        transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+        top: -5rem;
+    }
+    }
+}
