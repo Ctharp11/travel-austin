@@ -10,7 +10,21 @@
     <link rel="shortcut icon" type="image/png" href="img/austin-logo.png">
     <title>Travel Austin</title>
 </head>
-<body>
+<body class="preload">
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">MENU</label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#aboutta" class="navigation__link"> <span>01</span> Travel Austin</a></li>
+                <li class="navigation__item"><a href="#benefits" class="navigation__link"> <span>02</span> Your Benefits</a></li>
+                <li class="navigation__item"><a href="#populartours" class="navigation__link"> <span>03</span> Popular Tours</a></li>
+                <li class="navigation__item"><a href="#alltours" class="navigation__link"> <span>04</span> All Tours</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <header class="header">  
 
@@ -20,7 +34,7 @@
 
         <div class="header__hero-opacity"></div>
 
-        <div class="header__text-box">
+        <div class="header__text-box" id="aboutta">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">travel austin</span>
                 <span class="heading-primary--sub">the easy way to tour austin</span>
@@ -72,7 +86,7 @@
 
     </section>
 
-    <section class="section-features u-margin-bottom-big">
+    <section class="section-features u-margin-bottom-big" id="benefits">
             <div class="u-center-text">
                 <h2 class="section-features__heading">
                     Some Austin Features
@@ -127,7 +141,7 @@
 
     <section class="section-tours">
             <div class="u-center-text" id="tours" id="modal-close">
-                <h2 class="heading-secondary u-margin-bottom-medium">
+                <h2 class="heading-secondary u-margin-bottom-medium" id="populartours">
                     Our Most Popular Tours
                 </h2>
             </div>
@@ -233,7 +247,7 @@
                 </div>
             </div>
 
-            <div class="u-center-text u-margin-top-big">
+            <div class="u-center-text u-margin-top-big" id="alltours">
                 <a href="#modal" class="btn btn--orange btn--animated">View all tours</a>
             </div>
 
@@ -265,6 +279,12 @@
             Travel Austin -- Built by Cameron Tharp
         </div>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $("body").removeClass("preload");
+        });
+    </script>
 </body>
 </html>
