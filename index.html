@@ -288,9 +288,9 @@
             $("body").removeClass("preload");
         });
 
-        $(".navigation__item").click(function(){
-             $('.navigation__checkbox').click();
-        });
+       $('.navigation__link').on('click', function() {
+           $('.navigation__button').click();
+       })
     </script>
 </body>
 </html>
