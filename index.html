@@ -14,12 +14,14 @@
 
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">MENU</label>
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#aboutta" class="navigation__link"> <span>01</span> Travel Austin</a></li>
-                <li class="navigation__item"><a href="#benefits" class="navigation__link"> <span>02</span> Your Benefits</a></li>
+                <li class="navigation__item"><a href="#benefits" class="navigation__link"> <span>02</span> Austin Features</a></li>
                 <li class="navigation__item"><a href="#populartours" class="navigation__link"> <span>03</span> Popular Tours</a></li>
                 <li class="navigation__item"><a href="#alltours" class="navigation__link"> <span>04</span> All Tours</a></li>
             </ul>
@@ -284,6 +286,10 @@
     <script type="text/javascript">
         $(window).on('load', function() {
             $("body").removeClass("preload");
+        });
+
+        $(".navigation__item").click(function(){
+             $('.navigation__checkbox').click();
         });
     </script>
 </body>
