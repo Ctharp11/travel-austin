@@ -22,7 +22,7 @@
         }
         @include respond(phone) {
             top: 0;
-            left: 28rem;
+            left: 24rem;
             width: 25%;
         }
     }
@@ -39,7 +39,7 @@
         }
         @include respond(phone) {
             top: 0;
-            left: 2rem;
+            left: 0;
             width: 25%;
         }
     }
@@ -56,7 +56,7 @@
         }
         @include respond(phone) {
             top: 0;
-            left: 15rem;
+            left: 12rem;
             width: 25%;
         }
     }

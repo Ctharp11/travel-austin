@@ -3,7 +3,7 @@
     background-image: linear-gradient(
         to right bottom, 
         rgba($color-fade-light,  0.63),
-        rgba($color-fade-dark, 0.8)),
+        rgba($color-fade-dark, 0.8)), 
        url('../img/hero.jpg');
     background-size: cover;
     background-position: top;
@@ -14,6 +14,11 @@
     @include respond(tab-port) {
         webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    }
+    @media all and (max-width: 500px) {
+        webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+
     }
 
     &__logo-box {
@@ -38,7 +43,11 @@
         opacity: 0.6;
 
         @include respond(phone) {
-            top: 50%;
+            top: 55%;
+            height: 37rem;
+        }
+        @media all and (max-width: 767px) {
+            width: 90%;
         }
     }
     

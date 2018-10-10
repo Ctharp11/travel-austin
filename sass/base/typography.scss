@@ -24,8 +24,9 @@ body {
 
         @include respond(phone) {
             letter-spacing: 1rem;
-            font-size: 4rem;
+            font-size: 4rem; 
             margin-left: 0;
+            line-height: 4.2rem;
         }
 
         @media screen and (max-height: 380px) {
